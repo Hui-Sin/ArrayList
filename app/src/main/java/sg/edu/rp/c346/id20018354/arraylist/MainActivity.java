@@ -21,6 +21,10 @@ public class MainActivity extends AppCompatActivity {
         fruits.add("apple");
         fruits.add("banana");
         fruits.add("cherry");
+        fruits.add(3,"durian");
+        String thefruit=fruits.get(1);
+        fruits.remove(0);
+        fruits.set(fruits.size()-1,"dragon fruit");
 
 
         tv=findViewById(R.id.textViewItems);
@@ -29,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0;i<fruits.size();i++){
             text+= fruits.get(i) +"\n";
         }
-        tv.setText(text);
+        tv.setText(text+thefruit);
+
     }
 }
