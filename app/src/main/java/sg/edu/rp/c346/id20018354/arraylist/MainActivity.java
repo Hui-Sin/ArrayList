@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i=0;i<fruits.size();i++){
             text+= fruits.get(i) +"\n";
         }
-        tv.setText(text+thefruit);
+        tv.setText(text);
 
     }
 }
